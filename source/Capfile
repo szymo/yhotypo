@@ -1,0 +1,18 @@
+load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+
+set :application, "YOUR_APP_NAME"
+set :deploy_to, "/PATH/TO/APP/ON/SERVER"
+set :deploy_via, :copy
+set :repository, "build" 
+set :scm, :none 
+set :copy_compression, :gzip
+set :use_sudo, false
+set :domain, 'YOUR_APP_DOMAIN'
+set :user, 'YOUR_DEPLOY_USER'
+
+role :web, 'YOUR_APP_DOMAIN'
+
+before 'deploy:update_code' do
+  run_locally 'rm -rf build/*'
+  run_locally 'middleman build'
+end

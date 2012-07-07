@@ -1,0 +1,84 @@
+!!! 5
+%html{ :lang => "pl" }
+  %head
+    - if @title
+      %title #{@title} | YHO • letterpress studio, druk typograficzny
+    - else 
+      %title YHO • letterpress / pracownia druku typograficznego • Wrocław
+    :plain
+      <meta charset="utf-8">
+      <meta name="description" content="YHO jest pracownią letterpress / druku typograficznego. W naszej pracowni codziennie łączymy ze sobą przywiązanie do tradycji, precyzję oraz wyjątkowość.">
+      <meta name="keywords" content="#{@meta_keywords}druk typograficzny, letterpress, letterpress wroclaw, pracownia typografii, letterpress w polsce, nietypowe wizytówki, wizytówki letterpress, tłoczone wizytówki, nietypowe zaproszenia, zaproszenia ręcznie robione, zaproszenia letterpress, pracownia druku, typografia, tradycyjne metody druku, pracownia druku typograficznego, wrocław, dawne techniki druku, czcionki, druk wypukły, zecerstwo, druk typo">
+      <meta http-equiv="Content-Language" content="pl">
+    = stylesheet_link_tag "main.css"
+    :plain
+      <!--[if lt IE 7]><link_to rel="stylesheet" type="text/css" href="/stylesheets/ie6.css" media="screen"/><![endif]-->
+      <script type="text/javascript" src="http://use.typekit.com/ysc6lji.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+      <script type="text/javascript" src="/javascripts/app.js"></script>
+    -if @colorbox
+      :plain
+        <style type="text/css">@import url("/stylesheets/colorbox.css");</style>
+        <script type="text/javascript" src="/javascripts/jquery.colorbox-min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('#thumbnails a').colorbox({transition:'fade', speed:500});
+          })
+        </script>
+    = favicon_tag '/favicon.ico'
+    = yield_content :head
+  %body{:id => @body_id, :class => @body_class}
+    :plain
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=234692803284084";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    #page.r1280
+      #wrap
+        #header
+          %h1
+            %a{:href => '/', :title => 'YHO studio letterpress / druk typograficzny'}
+              =image_tag "/images/yho_header.png", :alt => "YHO *druk typograficzny, studio letterpress"
+        %ul#nav
+          %li.blog
+            =link_to "Blog letterpress", 'http://blog.yhotypo.com/'
+          %li.opracowni
+            =link_to "O pracowni", '/o_pracowni.html'
+          %li.realizacje
+            =link_to "Realizacje letterpress", '/realizacje.html'
+          %li.zamowienia
+            =link_to "Zamówienia", '/zamowienia.html'
+          %li.kontakt
+            =link_to "Kontakt", '/kontakt.html'
+        #contact
+          #email
+            %a{:href => "mailto:yho@yhotypo.com"}
+              yho@yhotypo.com
+          .phone +48 605 071 055
+          .phone +48 503 356 347
+        - if @body_class == "body_realizacja"
+          = partial('realizacja_nav', :locals => {:next_work => @next_work, :prev_work => @prev_work } )
+        #content
+          = yield
+        #przerwa
+        #fblikebox
+          <div class="fb-like-box" data-href="http://www.facebook.com/YHOletterpress" data-width="270" data-height="90" data-show-faces="false" data-stream="false" data-header="false"></div>
+        #solar
+          fot. Krzysztof Solarewicz
+    :plain
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-127475-15']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    / This is Middleman, Typekit and you-name-it. Oparte na najnowocześniejszych technologiach

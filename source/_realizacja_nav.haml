@@ -1,0 +1,13 @@
+%ul#realizacja_nav.clearfix
+  %li#previous_work
+    - if @prev_work != " "
+      %a{ :href => @prev_work }
+        %span
+          \&laquo;
+        poprzednia
+  %li#next_work
+    - if @next_work != " "
+      %a{ :href => @next_work }
+        następna
+        %span
+          \&raquo;
