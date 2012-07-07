@@ -1,0 +1,7 @@
+*.rbc
+*.sassc
+*.swp
+.sass-cache
+**.orig
+.DS_Store
+
