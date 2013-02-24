@@ -4,13 +4,16 @@
  * TUTAJ YHO
  *
  */
+/* line 9, main.css.scss */
 * {
   margin: 0;
   padding: 0; }
 
+/* line 14, main.css.scss */
 html, body {
   height: 100%; }
 
+/* line 18, main.css.scss */
 body {
   background: #eaeaea;
   color: #111;
@@ -18,47 +21,58 @@ body {
   font-size: 14px;
   line-height: 23px; }
 
+/* line 26, main.css.scss */
 a {
   color: #d00; }
 
+/* line 30, main.css.scss */
 img {
   border: 0; }
 
+/* line 35, main.css.scss */
 h2,
 h3 {
   font-weight: normal; }
 
+/* line 39, main.css.scss */
 h2 {
   font-size: 20px; }
 
+/* line 43, main.css.scss */
 h3 {
   font-size: 16px; }
 
+/* line 47, main.css.scss */
 h4 {
   font-size: 14px;
   margin: 14px 0 4px; }
 
+/* line 52, main.css.scss */
 .caps {
   font-variant: small-caps;
   text-transform: lowercase;
   font-size: 1.2em;
   letter-spacing: .05em; }
 
+/* line 60, main.css.scss */
 #header {
   position: absolute;
   left: 40px;
   top: 30px; }
 
+/* line 66, main.css.scss */
 #nav {
   list-style: none;
   position: absolute;
   right: 5%;
   top: 35px; }
 
+/* line 75, main.css.scss */
 #nav li,
 #nav li a {
   display: block; }
 
+/* line 79, main.css.scss */
 #nav li a {
   background: url(/images/menu.png) no-repeat;
   height: 24px;
@@ -66,36 +80,46 @@ h4 {
   text-indent: -9999px;
   width: 108px; }
 
+/* line 87, main.css.scss */
 #nav li.blog a {
   background: url(/images/menu_blog.png) !important;
   width: 270px;
   height: 30px;
   margin-bottom: 15px; }
 
+/* line 94, main.css.scss */
 #nav li.opracowni a {
   background-position: 0 0; }
 
+/* line 95, main.css.scss */
 #nav li.opracowni a:hover, #opracowni li.opracowni a {
   background-position: -108px 0; }
 
+/* line 96, main.css.scss */
 #nav li.realizacje a {
   background-position: 0 -30px; }
 
+/* line 97, main.css.scss */
 #nav li.realizacje a:hover, #realizacje li.realizacje a, .body_realizacja #nav li.realizacje a {
   background-position: -108px -30px; }
 
+/* line 98, main.css.scss */
 #nav li.zamowienia a {
   background-position: 0 -60px; }
 
+/* line 99, main.css.scss */
 #nav li.zamowienia a:hover, #zamowienia li.zamowienia a {
   background-position: -108px -60px; }
 
+/* line 100, main.css.scss */
 #nav li.kontakt a {
   background-position: 0 -90px; }
 
+/* line 101, main.css.scss */
 #nav li.kontakt a:hover, #kontakt li.kontakt a {
   background-position: -108px -90px; }
 
+/* line 103, main.css.scss */
 #contact {
   /*background: rgb(255, 0, 0);
   background: rgba(255, 0, 0, 0.2);*/
@@ -107,14 +131,7 @@ h4 {
   width: 270px;
   height: 100px; }
 
-#przerwa {
-  background: url(/images/przerwa.png);
-  position: absolute;
-  top: 500px;
-  right: 5%;
-  width: 539px;
-  height: 100px; }
-
+/* line 115, main.css.scss */
 #fblikebox {
   background: rgba(255, 255, 255, 0.6);
   position: absolute;
@@ -123,6 +140,7 @@ h4 {
   width: 270px;
   height: 100px; }
 
+/* line 124, main.css.scss */
 #contact a {
   display: block;
   position: absolute;
@@ -131,6 +149,7 @@ h4 {
   height: 25px;
   width: 150px; }
 
+/* line 133, main.css.scss */
 #content {
   background: white;
   background: rgba(255, 255, 255, 0.85);
@@ -142,9 +161,11 @@ h4 {
   padding: 20px;
   width: 530px; }
 
+/* line 145, main.css.scss */
 #home #wrap {
   position: relative; }
 
+/* line 149, main.css.scss */
 #home #content {
   background: none repeat scroll 0 0 transparent;
   bottom: 10px;
@@ -152,39 +173,49 @@ h4 {
   top: auto;
   width: auto; }
 
+/* line 157, main.css.scss */
 #home_nav {
   list-style: none; }
 
+/* line 161, main.css.scss */
 #home_nav li {
   display: inline;
   margin-right: 20px; }
 
+/* line 166, main.css.scss */
 #content h2 {
   margin-bottom: 23px; }
 
+/* line 170, main.css.scss */
 #content p {
   margin-bottom: 6px; }
 
+/* line 174, main.css.scss */
 .druk_typo {
   margin: 23px 20px 0 50px;
   text-indent: -10px;
   font-style: italic; }
 
+/* line 180, main.css.scss */
 .realizacja {
   margin-top: 23px; }
 
+/* line 184, main.css.scss */
 .realizacja h3 {
   margin-bottom: 9px; }
 
+/* line 188, main.css.scss */
 .realizacja a {
   display: block;
   float: left;
   margin-right: 20px; }
 
+/* line 194, main.css.scss */
 #content .realizacja p {
   line-height: 18px;
   margin: 0; }
 
+/* line 199, main.css.scss */
 #content .realizacja .projekt {
   margin-bottom: 9px;
   font-size: 11px; }
@@ -192,13 +223,16 @@ h4 {
 /*
  * strony poszczególnych realizacji
  */
+/* line 208, main.css.scss */
 .body_realizacja #content {
   top: 105px;
   padding-bottom: 30px; }
 
+/* line 213, main.css.scss */
 #realizacja #content h2 {
   margin-bottom: 0; }
 
+/* line 217, main.css.scss */
 #realizacja_nav {
   background: white;
   background: rgba(255, 255, 255, 0.55);
@@ -211,11 +245,13 @@ h4 {
   padding-left: 10px;
   width: 560px; }
 
+/* line 230, main.css.scss */
 #all_works {
   position: absolute;
   left: 50%;
   margin-left: -50px; }
 
+/* line 236, main.css.scss */
 #realizacja_nav #all_works a {
   letter-spacing: 0;
   font-size: 17px;
@@ -223,35 +259,44 @@ h4 {
   text-transform: lowercase;
   color: #777; }
 
+/* line 244, main.css.scss */
 #next_work {
   position: absolute;
   right: 10px; }
 
+/* line 249, main.css.scss */
 #realizacja_nav li {
   color: #aaa;
   letter-spacing: .05em; }
 
+/* line 254, main.css.scss */
 #realizacja_nav a {
   color: #000;
   text-decoration: none; }
 
+/* line 259, main.css.scss */
 #realizacja_nav a span {
   color: #f00; }
 
+/* line 264, main.css.scss */
 #realizacja_nav a,
 #realizacja_nav li {
   float: left; }
 
+/* line 268, main.css.scss */
 #work_title {
   margin-top: -15px; }
 
+/* line 272, main.css.scss */
 #work_title h3 {
   text-indent: -15px; }
 
+/* line 276, main.css.scss */
 #work_title h2 {
   margin-bottom: 9px;
   font-size: 17px; }
 
+/* line 281, main.css.scss */
 #work_title h3 a {
   color: #555;
   font-variant: small-caps;
@@ -260,23 +305,29 @@ h4 {
   text-decoration: none;
   letter-spacing: .05em; }
 
+/* line 290, main.css.scss */
 #work_title a span {
   color: #f00; }
 
+/* line 294, main.css.scss */
 #work_description {
   line-height: 18px; }
 
+/* line 298, main.css.scss */
 .body_realizacja #thumbnails {
   margin: 9px 0; }
 
+/* line 303, main.css.scss */
 .body_realizacja #thumbnails img,
 .body_realizacja #thumbnails a {
   display: block;
   float: left; }
 
+/* line 308, main.css.scss */
 .body_realizacja #content p {
   margin-bottom: 6px; }
 
+/* line 312, main.css.scss */
 .body_realizacja #projekt {
   margin: 0 !important;
   bottom: 20px;
@@ -305,6 +356,7 @@ h4 {
 /*
  * SOLAR
  */
+/* line 346, main.css.scss */
 #solar {
   bottom: 5px;
   position: absolute;
@@ -315,171 +367,223 @@ h4 {
 /*
  * layouty
  */
+/* line 363, main.css.scss */
 .r1024 #nav,
 .r1024 #przerwa,
 .r1024 #fblikebox,
 .r1024 #contact {
   right: 0; }
 
+/* line 364, main.css.scss */
 .r1024 #content {
   left: 40px;
   height: 450px; }
 
+/* line 365, main.css.scss */
 .r1024 #realizacja_nav {
   left: 40px; }
 
+/* line 367, main.css.scss */
 .r1280 #content {
   height: 540px; }
 
+/* line 368, main.css.scss */
 .r1440 #content {
   height: 580px; }
 
+/* line 369, main.css.scss */
 .r1680 #content {
   height: 630px; }
 
+/* line 370, main.css.scss */
 .r1920 #content {
   height: 690px; }
 
+/* line 372, main.css.scss */
 .body_realizacja .r1280 #content {
   height: 515px; }
 
+/* line 373, main.css.scss */
 .body_realizacja .r1440 #content {
   height: 555px; }
 
+/* line 374, main.css.scss */
 .body_realizacja .r1680 #content {
   height: 605px; }
 
+/* line 375, main.css.scss */
 .body_realizacja .r1920 #content {
   height: 675px; }
 
 /*
  * tła
  */
+/* line 382, main.css.scss */
 #page {
   background-position: 50% 30%;
   height: auto !important;
   min-height: 100%; }
 
+/* line 388, main.css.scss */
 #page.r1024 {
   background-position: 50% 0; }
 
+/* line 392, main.css.scss */
 #page.r1280 {
   background-position: 50% 10%; }
 
+/* line 396, main.css.scss */
 #home .r1920 {
   background-image: url(/images/1_1920.jpg); }
 
+/* line 397, main.css.scss */
 #home .r1680 {
   background-image: url(/images/1_1680.jpg); }
 
+/* line 398, main.css.scss */
 #home .r1440 {
   background-image: url(/images/1_1440.jpg); }
 
+/* line 399, main.css.scss */
 #home .r1280 {
   background-image: url(/images/1_1280.jpg); }
 
+/* line 400, main.css.scss */
 #home .r1024 {
   background-image: url(/images/1_1024.jpg); }
 
+/* line 402, main.css.scss */
 #opracowni {
   color: #111; }
 
+/* line 403, main.css.scss */
 #opracowni #nav li a {
   background-image: url(/images/menu_black.png); }
 
+/* line 404, main.css.scss */
 #opracowni .r1920 {
   background-image: url(/images/2_1920.jpg); }
 
+/* line 405, main.css.scss */
 #opracowni .r1680 {
   background-image: url(/images/2_1680.jpg); }
 
+/* line 406, main.css.scss */
 #opracowni .r1440 {
   background-image: url(/images/2_1440.jpg); }
 
+/* line 407, main.css.scss */
 #opracowni .r1280 {
   background-image: url(/images/2_1280.jpg); }
 
+/* line 408, main.css.scss */
 #opracowni .r1024 {
   background-image: url(/images/2_1280.jpg); }
 
+/* line 410, main.css.scss */
 #realizacje .r1920 {
   background-image: url(/images/3_1920.jpg); }
 
+/* line 411, main.css.scss */
 #realizacje .r1680 {
   background-image: url(/images/3_1680.jpg); }
 
+/* line 412, main.css.scss */
 #realizacje .r1440 {
   background-image: url(/images/3_1440.jpg); }
 
+/* line 413, main.css.scss */
 #realizacje .r1280 {
   background-image: url(/images/3_1280.jpg); }
 
+/* line 414, main.css.scss */
 #realizacje .r1024 {
   background-image: url(/images/3_1024.jpg); }
 
+/* line 416, main.css.scss */
 .body_realizacja #nav li a {
   background-image: url(/images/menu_black.png); }
 
+/* line 417, main.css.scss */
 .body_realizacja .r1920 {
   background-image: url(/images/6_1920.jpg); }
 
+/* line 418, main.css.scss */
 .body_realizacja .r1680 {
   background-image: url(/images/6_1680.jpg); }
 
+/* line 419, main.css.scss */
 .body_realizacja .r1440 {
   background-image: url(/images/6_1440.jpg); }
 
+/* line 420, main.css.scss */
 .body_realizacja .r1280 {
   background-image: url(/images/6_1280.jpg); }
 
+/* line 421, main.css.scss */
 .body_realizacja .r1024 {
   background-image: url(/images/6_1024.jpg); }
 
+/* line 423, main.css.scss */
 #zamowienia {
   color: #111; }
 
+/* line 424, main.css.scss */
 #zamowienia #nav li a {
   background-image: url(/images/menu_black.png); }
 
+/* line 425, main.css.scss */
 #zamowienia .r1920 {
   background-image: url(/images/5_1920.jpg); }
 
+/* line 426, main.css.scss */
 #zamowienia .r1680 {
   background-image: url(/images/5_1680.jpg); }
 
+/* line 427, main.css.scss */
 #zamowienia .r1440 {
   background-image: url(/images/5_1440.jpg); }
 
+/* line 428, main.css.scss */
 #zamowienia .r1280 {
   background-image: url(/images/5_1280.jpg); }
 
+/* line 429, main.css.scss */
 #zamowienia .r1024 {
   background-image: url(/images/5_1024.jpg); }
 
+/* line 431, main.css.scss */
 #kontakt {
   color: #111; }
 
+/* line 432, main.css.scss */
 #kontakt #nav li a {
   background-image: url(/images/menu_black.png); }
 
+/* line 433, main.css.scss */
 #kontakt .r1920 {
   background-image: url(/images/4_1920.jpg); }
 
+/* line 434, main.css.scss */
 #kontakt .r1680 {
   background-image: url(/images/4_1680.jpg); }
 
+/* line 435, main.css.scss */
 #kontakt .r1440 {
   background-image: url(/images/4_1440.jpg); }
 
+/* line 436, main.css.scss */
 #kontakt .r1280 {
   background-image: url(/images/4_1280.jpg); }
 
+/* line 437, main.css.scss */
 #kontakt .r1024 {
   background-image: url(/images/4_1024.jpg); }
 
 /*
  * głupoty
  */
+/* line 446, main.css.scss */
 .realizacja:after,
 #work_info:after,
 #thumbnails:after,
@@ -491,8 +595,10 @@ h4 {
   visibility: hidden;
   font-size: 0; }
 
+/* line 449, main.css.scss */
 *:focus {
   outline: none; }
 
+/* line 450, main.css.scss */
 *::-moz-focus-inner {
   border: none; }
