@@ -5,3 +5,6 @@
 **.orig
 .DS_Store
 Capfile
+/.bundle
+/build
+/.sass-cache
